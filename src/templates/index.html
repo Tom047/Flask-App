@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Search NFT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+	<form method="POST">
+		<div class="wrap">
+			<div class="search">
+			<input type="text" class="searchTerm" name="address" placeholder="Enter nft address">
+			<button type="submit" class="searchButton">
+				<i class="fa fa-search"></i>
+			</button>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

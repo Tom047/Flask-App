@@ -1,12 +1,11 @@
 import collections
-from re import M
 from time import sleep
 from json2html import * 
 import requests, psycopg2, json
 from flask import Flask, render_template, request
 
 # Connection to DB
-conn = psycopg2.connect(database="nft_test", user = "postgres", password = "Murad2001", host = "127.0.0.1", port = "5432")
+conn = psycopg2.connect(database="nft_test", user = "postgres", password = "PASSWORD", host = "127.0.0.1", port = "5432")
 
 url = "https://solana-gateway.moralis.io/nft/mainnet/{}/metadata"
 

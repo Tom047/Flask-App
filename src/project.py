@@ -11,7 +11,7 @@ url = "https://solana-gateway.moralis.io/nft/mainnet/{}/metadata"
 
 headers = {
     "accept": "application/json",
-    "X-API-Key": "ji6Went1H9iyAf99QlBqID362KCuSwloYwVgyrw2IkTFbYQjK7ARYzVDcEMbXgNe"
+    "X-API-Key": "YOUR OWN API-KEY"
 }
 
 app = Flask(__name__)

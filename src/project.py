@@ -13,7 +13,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 # Connection to DB
 
-conn = psycopg2.connect(database="nft_test", user = "postgres", password = "Murad2001", host = "127.0.0.1", port = "5432")
+conn = psycopg2.connect(database="nft_test", user = "postgres", password = "PASSWORD", host = "127.0.0.1", port = "5432")
 cur = conn.cursor()
 cur.execute(""" CREATE TABLE IF NOT EXISTS users(name text, email text, password text, PRIMARY KEY (name)) """)
 cur.close()
@@ -22,12 +22,12 @@ url = "https://solana-gateway.moralis.io/nft/mainnet/{}/metadata"
 
 headers = {
     "accept": "application/json",
-    "X-API-Key": "ji6Went1H9iyAf99QlBqID362KCuSwloYwVgyrw2IkTFbYQjK7ARYzVDcEMbXgNe"
+    "X-API-Key": "Your own API-KEY"
 }
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Mysecretkey'
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://postgres:Murad2001@localhost/nft_test"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://postgres:PASSWORD@localhost/nft_test"
 db = SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 login_manager = LoginManager()

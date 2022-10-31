@@ -26,6 +26,23 @@ body{
   color: #00B4CC;
 }
 
+.logoutButton {
+  width: 90px;
+  height: 35px;
+  border: 1px solid #cc0000;
+  background: #cc0000;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 20px;
+
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .searchButton {
   width: 40px;
   height: 36px;

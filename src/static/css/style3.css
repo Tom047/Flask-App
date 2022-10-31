@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body{
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
+#wrapper {
+  width: 70%;
+  margin: 25% auto;
 }
 
-.searchButton {
+.signinButton {
   width: 100px;
   height: 36px;
   border: 1px solid #00B4CC;
@@ -16,10 +16,27 @@ body{
   cursor: pointer;
   font-size: 20px;
 
-  position: absolute;
+  /* position: absolute;
   top: 110%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+
+.signupButton {
+  width: 100px;
+  height: 36px;
+  border: 1px solid #00cc22;
+  background: #00cc22;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 20px;
+
+  /* position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 /*Resize the wrap to see the search bar change!*/

@@ -3,8 +3,7 @@ Flask Application to parse Solana NFT's info
 
 ## Installation
 <ol>
-  <li> You need to pip install additional packages to your environment: </li>
-  json2html, psycopg2, flask, requests
+  <li> You need to install all libraries from Requirements.txt.</li>
   <li> After installing the necessary libraries, install PostgreSQL.</li>
   <li> Download project(src folder) to your PC and connect it to your database (change the conn variable in the project.py file).</li>
   <li> Launch project.py and open the address http://127.0.0.1:5000 in the browser</li>

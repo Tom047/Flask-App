@@ -14,9 +14,6 @@ from flask_sqlalchemy import SQLAlchemy
 # Connection to DB
 
 conn = psycopg2.connect(database="nft_test", user = "postgres", password = "PASSWORD", host = "127.0.0.1", port = "5432")
-cur = conn.cursor()
-cur.execute(""" CREATE TABLE IF NOT EXISTS users(name text, email text, password text, PRIMARY KEY (name)) """)
-cur.close()
 
 url = "https://solana-gateway.moralis.io/nft/mainnet/{}/metadata"
 
